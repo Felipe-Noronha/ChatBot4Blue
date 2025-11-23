@@ -139,17 +139,21 @@ Recebe uma mensagem de um usuário e retorna a mensagem criada com a resposta au
 
 **Exemplo de Request:**
 
-- user_id: 1  
-- text: "Olá, preciso de ajuda."
+{
+  "user_id": 1,
+  "text": "Olá, preciso de ajuda."
+}
 
 #### Response
 
-- **id**: 10  
-- **user_id**: 1  
-- **user_name**: "Usuário A"  
-- **text**: "Olá, preciso de ajuda."  
-- **response**: "Obrigado Usuário A, sua solicitação foi registrada e será analisada."  
-- **created_at**: "2025-11-22T21:30:15Z"
+{
+  "id": 10,
+  "user_id": 1,
+  "user_name": "Usuário A",
+  "text": "Olá, preciso de ajuda.",
+  "response": "Obrigado Usuário A, sua solicitação foi registrada e será analisada.",
+  "created_at": "2025-11-22T21:30:15Z"
+}
 
 #### Erros Comuns
 
@@ -176,21 +180,25 @@ GET `/api/history/1/?start_date=2025-11-01&end_date=2025-11-22`
 
 #### Response
 
-- **Mensagem 1**  
-  - **id**: 10  
-  - **user_id**: 1  
-  - **user_name**: "Usuário A"  
-  - **text**: "Olá, preciso de ajuda."  
-  - **response**: "Obrigado Usuário A, sua solicitação foi registrada e será analisada."  
-  - **created_at**: "2025-11-22T21:30:15Z"
+[
+  {
+    "id": 10,
+    "user_id": 1,
+    "user_name": "Usuário A",
+    "text": "Olá, preciso de ajuda.",
+    "response": "Obrigado Usuário A, sua solicitação foi registrada e será analisada.",
+    "created_at": "2025-11-22T21:30:15Z"
+  },
+  {
+    "id": 5,
+    "user_id": 1,
+    "user_name": "Usuário A",
+    "text": "Outra mensagem anterior",
+    "response": "Obrigado Usuário A, sua solicitação foi registrada e será analisada.",
+    "created_at": "2025-11-21T16:10:00Z"
+  }
+]
 
-- **Mensagem 2**  
-  - **id**: 5  
-  - **user_id**: 1  
-  - **user_name**: "Usuário A"  
-  - **text**: "Outra mensagem anterior"  
-  - **response**: "Obrigado Usuário A, sua solicitação foi registrada e será analisada."  
-  - **created_at**: "2025-11-21T16:10:00Z"
 
 #### Erros Comuns
 
@@ -237,10 +245,4 @@ O projeto foi planejado para ser simples de executar, mas robusto em arquitetura
 - Evolução  
 - Testes facilitados  
 - Manutenção a longo prazo  
-
-
-
-
-
-
 
