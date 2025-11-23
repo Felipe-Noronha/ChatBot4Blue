@@ -1,0 +1,34 @@
+
+.home-container {
+    padding: 20px;
+}
+
+.welcome-message {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.alert-box {
+    background-color: #ffe0e0;
+    color: #cc0000;
+    border: 1px solid #ff9999;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.status-box {
+    background-color: #e0ffe0;
+    color: #008800;
+    border: 1px solid #99ff99;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.error-message {
+  color: #F44336;
+  font-weight: bold;
+  margin: 10px 0;
+}

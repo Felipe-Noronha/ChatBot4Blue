@@ -1,0 +1,104 @@
+
+:root {
+    --cor-navbar-fundo: #0c2319;     
+    --cor-fundo-corpo: #1a322e;     
+    --cor-destaque: #cbbb7c;        
+    --cor-texto-claro: #f0f0f0;     
+    --cor-texto-principal: #0c2319; 
+    --cor-acao-sucesso: #5da376;    
+    --cor-hover-foco: #974a15;      
+    --cor-borda: #7c8484;           
+    --cor-card-fundo: #2b4440;      
+    --cor-sombra: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-navbar-fundo); 
+    color: var(--cor-texto-claro);
+    line-height: 1.6;
+}
+
+#root {
+    margin: 0; 
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--cor-fundo-corpo); 
+}
+
+.app-header {
+    background-color: var(--cor-navbar-fundo);
+    padding: 0;
+    width: 100%; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 60px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.nav-links {
+    display: flex; 
+    gap: 25px; 
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--cor-texto-claro);
+    padding: 8px 0;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--cor-destaque); 
+    border-bottom: 3px solid var(--cor-destaque);
+}
+
+.navbar-logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.app-main {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: var(--cor-fundo-corpo); 
+    color: var(--cor-texto-claro);
+    min-height: calc(100vh - 60px - 40px);
+}
+
+h1, h2 {
+    color: var(--cor-destaque); 
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.alert-box, .status-box {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: var(--cor-texto-principal);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.alert-box {
+    background-color: #fff3e0; 
+    border-left: 5px solid var(--cor-hover-foco); 
+}
+
+.status-box {
+    background-color: #e6f7e9; 
+    border-left: 5px solid var(--cor-acao-sucesso); 
+}
