@@ -212,20 +212,20 @@ GET `/api/history/1/?start_date=2025-11-01&end_date=2025-11-22`
 ### Backend (Django)
 
 core/
-|-- domain/
-|-- application/
-|-- infrastructure/
+- domain/ 
+- application/  
+- infrastructure/ 
 
 ### Frontend (React)
 
 src/
-|-- domain/
-|-- usecases/
-|-- infrastructure/
-|-- components/
-|-- hooks/
-|-- styles/
-|-- assets/
+- domain/   
+- usecases/  
+- infrastructure/ 
+- components/    
+- hooks/        
+- styles/         
+- assets/         
 
 ---
 
