@@ -236,16 +236,5 @@ src/
 - **Repositórios na camada Infrastructure**: toda lógica de banco isolada, incluindo filtros por data e timezone, garantindo proteção do domínio  
 - **Frontend modular**: separação clara entre UI, domínio e casos de uso, facilitando alterações caso a API mude  
 - **Gerenciamento de estado no React com hooks separados (`useState`, `useEffect`)**: isola responsabilidades, evita re-renderizações desnecessárias, mantém o histórico sincronizado com filtros e usuário ativo, além de tornar o fluxo mais previsível e fácil de depurar
-- **Modelos Django enxutos e focados apenas na persistência**: `User` e `Message` foram mantidos simples, normalizados e separados para garantir clareza nas relações; a `Message` contém apenas dados essenciais da interação, enquanto o `User` abstrai identidades simuladas. Os serializers expõem somente o necessário (campos derivados como `user_id` e `user_name`), protegendo o domínio e evitando vazamento de dados internos.
-
-
----
-
-## Conclusão
-
-O projeto foi planejado para ser simples de executar, mas robusto em arquitetura, permitindo:
-
-- Evolução  
-- Testes facilitados  
-- Manutenção a longo prazo  
+- **Modelos Django enxutos e focados apenas na persistência**: `User` e `Message` foram mantidos simples, normalizados e separados para garantir clareza nas relações; a `Message` contém apenas dados essenciais da interação, enquanto o `User` abstrai identidades simuladas. Os serializers expõem somente o necessário (campos derivados como `user_id` e `user_name`), protegendo o domínio e evitando vazamento de dados internos. 
 
