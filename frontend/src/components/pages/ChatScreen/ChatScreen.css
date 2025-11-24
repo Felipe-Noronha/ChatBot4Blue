@@ -1,17 +1,16 @@
-
 .chat-container {
     padding: 20px;
-    background-color: var(--cor-card-fundo, #2b4440);
+    background-color: var(--cor-card-fundo);
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 4px 12px var(--cor-sombra);
 }
 
 .area-mensagens-chat {
     height: 400px;
-    overflow-y: auto; 
+    overflow-y: auto;
     background-color: transparent;
     border-radius: 8px;
-    padding: 20px; 
+    padding: 20px;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -27,23 +26,23 @@
 .input-mensagem {
     flex-grow: 1;
     padding: 12px;
-    border: 1px solid var(--cor-borda, #7c8484);
+    border: 1px solid var(--cor-borda);
     border-radius: 20px;
-    background-color: var(--cor-fundo-corpo, #1a322e);
-    color: var(--cor-texto-claro, #f0f0f0);
+    background-color: var(--cor-fundo-corpo);
+    color: var(--cor-texto-claro);
     font-size: 16px;
     transition: border-color 0.3s;
 }
 
 .input-mensagem:focus {
     outline: none;
-     border-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
 }
 
 .botao-enviar {
     padding: 12px 25px;
-    background-color: var(--cor-destaque, #cbbb7c); 
-    color: var(--cor-texto-principal, #0c2319); 
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo-corpo);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -52,10 +51,10 @@
 }
 
 .botao-enviar:hover {
-    background-color: #a39660; 
+    background-color: var(--cor-hover-foco);
 }
 
 .botao-enviar:disabled {
-    background-color: #ccc;
+    background-color: #555;
     cursor: not-allowed;
 }
