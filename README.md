@@ -60,10 +60,10 @@ cd api.chat
 ### 3. Ativar o ambiente virtual
 
 - **Windows (CMD):**
-  .venv\Scripts\activate
+  venv\Scripts\activate
 
 - **Windows (PowerShell):**
-  .\.venv\Scripts\Activate.ps11
+  .\venv\Scripts\Activate.ps1
   
 - **macOS / Linux:**
   source venv/bin/activate
