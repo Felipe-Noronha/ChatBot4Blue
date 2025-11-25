@@ -10,6 +10,9 @@ A solução segue uma arquitetura limpa, inspirada em **DDD (Domain-Driven Desig
 
 ---
 
+# Demonstração
+![Demo do Chat](./assets/demo-funcionamento.gif)
+
 ## Tecnologias Utilizadas
 
 ### Backend
