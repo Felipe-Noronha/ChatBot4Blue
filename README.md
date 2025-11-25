@@ -11,7 +11,7 @@ A solução segue uma arquitetura limpa, inspirada em **DDD (Domain-Driven Desig
 ---
 
 # Demonstração
-![Demo do Chat](./assets/demo-funcionamento.gif)
+![Image](https://github.com/user-attachments/assets/b8423a0f-f704-4d85-a5f4-ada40d01c5ee)
 
 ## Tecnologias Utilizadas
 
